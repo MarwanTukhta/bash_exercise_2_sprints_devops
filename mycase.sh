@@ -1,5 +1,5 @@
 #!/bin/bash
-
+shopt -s extglob
 
 case $1 in
     [[:upper:]])
@@ -8,10 +8,10 @@ case $1 in
     [[:lower:]])
         echo "Thats Lower Case"
         ;;
-    [1-9])
+    [0-9])
         echo "Thats A Number"
         ;;
-    "")
+    *)
         echo "Thats Nothing"
         ;;
 esac
